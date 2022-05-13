@@ -142,3 +142,16 @@ input[name='r'] {
 #r4:checked ~ .navigation  .texts .txt4 {
     font-size: 30px;
 } 
+
+
+@media only screen and (max-width: 768px) {
+    .navigation {
+flex-direction: column-reverse;    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .texts {
+align-self: flex-start;    
+}
+  }
