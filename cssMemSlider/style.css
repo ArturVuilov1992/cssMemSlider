@@ -82,3 +82,63 @@ img {
     border-radius: 100%;
     background-color: white;
 }
+
+.bar:link,.bar:hover,.bar:visited{
+    background-color: orangered;
+    transform: scale(1.2);
+    border: 6px solid yellowgreen;
+}
+.bar:active {
+    background-color: aqua;
+
+}
+
+.mem-text:hover {
+    background-color: orangered;
+
+    transform: scale(1.3);
+}
+
+input[name='r'] {
+    display: none
+}
+
+#r1:checked ~ .slider  .slider-items .s1 {
+    margin-left: 0;
+}  
+#r1:checked ~ .navigation  .circles .bar .pointone {
+    background-color: red;
+} 
+#r1:checked ~ .navigation  .texts .txt1 {
+    font-size: 30px;
+} 
+
+#r2:checked  ~ .slider .slider-items .s1 {
+    margin-left: -25%;
+} 
+#r2:checked ~ .navigation  .circles .bar .pointtwo {
+    background-color: red;
+} 
+#r2:checked ~ .navigation  .texts .txt2 {
+    font-size: 30px;
+}  
+
+#r3:checked ~ .slider .slider-items .s1 {
+    margin-left: -50%;
+}  
+#r3:checked ~ .navigation  .circles .bar .pointthree {
+    background-color: red;
+} 
+#r3:checked ~ .navigation  .texts .txt3 {
+    font-size: 30px;
+}  
+
+#r4:checked ~ .slider .slider-items .s1 {
+    margin-left: -75%;
+}  
+#r4:checked ~ .navigation  .circles .bar .pointfour {
+    background-color: red;
+}   
+#r4:checked ~ .navigation  .texts .txt4 {
+    font-size: 30px;
+} 
