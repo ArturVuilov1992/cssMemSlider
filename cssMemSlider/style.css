@@ -1,0 +1,162 @@
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+transition: all ease .5s;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    height: 100vh;
+    max-width: 70rem;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    margin: 0 auto; 
+
+}
+
+.slider {
+   
+ overflow: hidden;
+    width: 100%;
+ border: 0.5556rem solid #fff;
+}
+.slider-items {
+    width: 400%;
+    display: flex;
+}
+.slide {
+    width: 25%;
+}
+img {
+    max-width: 70rem;
+    max-height: 48rem;
+    width: 100%;
+    height: 100%;
+}
+.navigation {
+    width: 100%;
+     min-height: 4rem;
+    display: flex;
+    align-items: center;
+    padding-top:1rem;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.mem-text {
+    color: #fff;
+    display: inline-block;
+    font-size: 0;
+    font-weight: 500;
+}
+
+  
+.circles {
+ display: flex;
+}
+.texts {
+    display: flex;
+}
+
+.bar {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    opacity: .5;
+    margin: 0.3333rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.point {
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.bar:link,.bar:hover,.bar:visited{
+    background-color: orangered;
+    transform: scale(1.2);
+    border: 0.3333rem solid yellowgreen;
+}
+.bar:active {
+    background-color: aqua;
+
+}
+
+.mem-text:hover {
+    background-color: orangered;
+
+}
+
+input[name='r'] {
+    display: none
+}
+
+#r1:checked ~ .slider  .slider-items .s1 {
+    margin-left: 0;
+}  
+#r1:checked ~ .navigation  .circles .bar .pointone {
+    background-color: red;
+} 
+#r1:checked ~ .navigation  .texts .txt1 {
+    font-size: 1.6667rem;
+} 
+
+#r2:checked  ~ .slider .slider-items .s1 {
+    margin-left: -25%;
+} 
+#r2:checked ~ .navigation  .circles .bar .pointtwo {
+    background-color: red;
+} 
+#r2:checked ~ .navigation  .texts .txt2 {
+    font-size: 1.6667rem;
+}  
+
+#r3:checked ~ .slider .slider-items .s1 {
+    margin-left: -50%;
+}  
+#r3:checked ~ .navigation  .circles .bar .pointthree {
+    background-color: red;
+} 
+#r3:checked ~ .navigation  .texts .txt3 {
+    font-size: 1.6667rem;
+}  
+
+#r4:checked ~ .slider .slider-items .s1 {
+    margin-left: -75%;
+}  
+#r4:checked ~ .navigation  .circles .bar .pointfour {
+    background-color: red;
+}   
+#r4:checked ~ .navigation  .texts .txt4 {
+    font-size: 1.6667rem;
+} 
+
+
+@media only screen and (max-width: 768px) {
+    .navigation {
+flex-direction: column-reverse;    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .texts {
+align-self: flex-start;    
+}
+  }
+  @media only screen and (max-width: 768px) {
+    .bar {
+        width: 3rem;
+        height: 4rem;}
+  }
+
